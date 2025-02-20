@@ -1,0 +1,29 @@
+[package]
+name = "sniper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ratatui = "0.24.0"
+crossterm = "0.27.0"
+tokio-util = "0.7.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+solana-client = "1.17"
+solana-sdk = "1.17"
+solana-program = "1.17"
+parking_lot = "0.12"
+futures = "0.3"
+base64 = "0.21"
+bs58 = "0.5"
+byteorder = "1.4"
+hex = "0.4"
+spl-associated-token-account = "2.2"
+spl-token = "4.0"
+futures-util = "0.3"
+tui = "0.19.0"
+
+[[sniper]]
+name = "sniper"
+path = "sniper.rs"
